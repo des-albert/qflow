@@ -1,7 +1,7 @@
 <template>
   <q-page class="bg-page row justify-center q-py-md">
     <div class="col-6">
-      <q-card class="bg-card text-card-normal justify-center">
+      <q-card class="bg-card text-txtNormal justify-center">
         <q-card-section class="col-6">
           <div class="text-h6">Create qFlow Account </div>
         </q-card-section>
