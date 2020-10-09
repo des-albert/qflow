@@ -5,7 +5,7 @@ dependencies:
   graphql: 15.3.0
   jsonwebtoken: 8.5.1
   md5: 2.3.0
-  mongoose: 5.10.8_mongoose@5.10.8
+  mongoose: 5.10.9_mongoose@5.10.9
   regenerator-runtime: 0.13.7
 devDependencies:
   concurrently: 5.3.0
@@ -25,7 +25,7 @@ packages:
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
       '@types/long': 4.0.1
-      '@types/node': 10.17.37
+      '@types/node': 10.17.39
       long: 4.0.0
     dev: false
     hasBin: true
@@ -106,20 +106,20 @@ packages:
       integrity: sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==
   /@types/accepts/1.3.5:
     dependencies:
-      '@types/node': 14.11.5
+      '@types/node': 14.11.8
     dev: false
     resolution:
       integrity: sha512-jOdnI/3qTpHABjM5cx1Hc0sKsPoYCp+DP/GJRGtDlPd7fiV9oXGGIcjW/ZOxLIvjGz8MA+uMZI9metHlgqbgwQ==
   /@types/body-parser/1.19.0:
     dependencies:
       '@types/connect': 3.4.33
-      '@types/node': 14.11.5
+      '@types/node': 14.11.8
     dev: false
     resolution:
       integrity: sha512-W98JrE0j2K78swW4ukqMleo8R7h/pFETjM2DQ90MF6XK2i4LO4W3gQ71Lt4w3bfm2EvVSyWHplECvB5sK22yFQ==
   /@types/connect/3.4.33:
     dependencies:
-      '@types/node': 14.11.5
+      '@types/node': 14.11.8
     dev: false
     resolution:
       integrity: sha512-2+FrkXY4zllzTNfJth7jOqEHC+enpLeGslEhpnTAkg21GkRrWV4SsAtqchtT4YS9/nODBU2/ZfsBY2X4J/dX7A==
@@ -132,7 +132,7 @@ packages:
       '@types/connect': 3.4.33
       '@types/express': 4.17.8
       '@types/keygrip': 1.0.2
-      '@types/node': 14.11.5
+      '@types/node': 14.11.8
     dev: false
     resolution:
       integrity: sha512-oTGtMzZZAVuEjTwCjIh8T8FrC8n/uwy+PG0yTvQcdZ7etoel7C7/3MSd7qrukENTgQtotG7gvBlBojuVs7X5rw==
@@ -144,7 +144,7 @@ packages:
       integrity: sha512-sOdDRU3oRS7LBNTIqwDkPJyq0lpHYcbMTt0TrjzsXbk/e37hcLTH6eZX7CdbDeN0yJJvzw9hFBZkbtCSbk/jAQ==
   /@types/express-serve-static-core/4.17.13:
     dependencies:
-      '@types/node': 14.11.5
+      '@types/node': 14.11.8
       '@types/qs': 6.9.5
       '@types/range-parser': 1.2.3
     dev: false
@@ -152,7 +152,7 @@ packages:
       integrity: sha512-RgDi5a4nuzam073lRGKTUIaL3eF2+H7LJvJ8eUnCI0wA6SNjXc44DCmWNiTLs/AZ7QlsFWZiw/gTG3nSQGL0fA==
   /@types/express-serve-static-core/4.17.9:
     dependencies:
-      '@types/node': 14.11.5
+      '@types/node': 14.11.8
       '@types/qs': 6.9.5
       '@types/range-parser': 1.2.3
     dev: false
@@ -178,7 +178,7 @@ packages:
       integrity: sha512-wLhcKh3PMlyA2cNAB9sjM1BntnhPMiM0JOBwPBqttjHev2428MLEB4AYVN+d8s2iyCVZac+o41Pflm/ZH5vLXQ==
   /@types/fs-capacitor/2.0.0:
     dependencies:
-      '@types/node': 14.11.5
+      '@types/node': 14.11.8
     dev: false
     resolution:
       integrity: sha512-FKVPOCFbhCvZxpVAMhdBdTfVfXUpsh15wFHgqOKxh9N9vzWZVuWCSijZ5T4U34XYNnuj2oduh6xcs1i+LPI+BQ==
@@ -218,7 +218,7 @@ packages:
       '@types/http-errors': 1.8.0
       '@types/keygrip': 1.0.2
       '@types/koa-compose': 3.2.5
-      '@types/node': 14.11.5
+      '@types/node': 14.11.8
     dev: false
     resolution:
       integrity: sha512-Etqs0kdqbuAsNr5k6mlZQelpZKVwMu9WPRHVVTLnceZlhr0pYmblRNJbCgoCMzKWWePldydU0AYEOX4Q9fnGUQ==
@@ -232,19 +232,19 @@ packages:
       integrity: sha512-Jus9s4CDbqwocc5pOAnh8ShfrnMcPHuJYzVcSUU7lrh8Ni5HuIqX3oilL86p3dlTrk0LzHRCgA/GQ7uNCw6l2Q==
   /@types/node-fetch/2.5.7:
     dependencies:
-      '@types/node': 14.11.5
+      '@types/node': 14.11.8
       form-data: 3.0.0
     dev: false
     resolution:
       integrity: sha512-o2WVNf5UhWRkxlf6eq+jMZDu7kjgpgJfl4xVNlvryc95O/6F2ld8ztKX+qu+Rjyet93WAWm5LjeX9H5FGkODvw==
-  /@types/node/10.17.37:
+  /@types/node/10.17.39:
     dev: false
     resolution:
-      integrity: sha512-4c38N7p9k9yqdcANh/WExTahkBgOTmggCyrTvVcbE8ByqO3g8evt/407v/I4X/gdfUkIyZBSQh/Rc3tvuwlVGw==
-  /@types/node/14.11.5:
+      integrity: sha512-dJLCxrpQmgyxYGcl0Ae9MTsQgI22qHHcGFj/8VKu7McJA5zQpnuGjoksnxbo1JxSjW/Nahnl13W8MYZf01CZHA==
+  /@types/node/14.11.8:
     dev: false
     resolution:
-      integrity: sha512-jVFzDV6NTbrLMxm4xDSIW/gKnk8rQLF9wAzLWIOg+5nU6ACrIMndeBdXci0FGtqJbP9tQvm6V39eshc96TO2wQ==
+      integrity: sha512-KPcKqKm5UKDkaYPTuXSx8wEP7vE9GnuaXIZKijwRYcePpZFDVuy2a57LarFKiORbHOuTOOwYzxVxcUzsh2P2Pw==
   /@types/qs/6.9.5:
     dev: false
     resolution:
@@ -255,14 +255,14 @@ packages:
       integrity: sha512-ewFXqrQHlFsgc09MK5jP5iR7vumV/BYayNC6PgJO2LPe8vrnNFyjQjSppfEngITi0qvfKtzFvgKymGheFM9UOA==
   /@types/serve-static/1.13.5:
     dependencies:
-      '@types/express-serve-static-core': 4.17.9
+      '@types/express-serve-static-core': 4.17.13
       '@types/mime': 2.0.3
     dev: false
     resolution:
       integrity: sha512-6M64P58N+OXjU432WoLLBQxbA0LRGBCRm7aAGQJ+SMC1IMl0dgRVi9EFfoDcS2a7Xogygk/eGN94CfwU9UF7UQ==
   /@types/ws/7.2.7:
     dependencies:
-      '@types/node': 14.11.5
+      '@types/node': 14.11.8
     dev: false
     resolution:
       integrity: sha512-UUFC/xxqFLP17hTva8/lVT0SybLUrfSD9c+iapKb0fEiC8uoDbA+xuZ3pAN603eW+bY8ebSMLm9jXdIPnD0ZgA==
@@ -1787,20 +1787,20 @@ packages:
       saslprep: 1.0.3
     resolution:
       integrity: sha512-sSZOb04w3HcnrrXC82NEh/YGCmBuRgR+C1hZgmmv4L6dBz4BkRse6Y8/q/neXer9i95fKUBbFi4KgeceXmbsOA==
-  /mongoose-legacy-pluralize/1.0.2_mongoose@5.10.8:
+  /mongoose-legacy-pluralize/1.0.2_mongoose@5.10.9:
     dependencies:
-      mongoose: 5.10.8_mongoose@5.10.8
+      mongoose: 5.10.9_mongoose@5.10.9
     dev: false
     peerDependencies:
       mongoose: '*'
     resolution:
       integrity: sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
-  /mongoose/5.10.8_mongoose@5.10.8:
+  /mongoose/5.10.9_mongoose@5.10.9:
     dependencies:
       bson: 1.1.5
       kareem: 2.3.1
       mongodb: 3.6.2
-      mongoose-legacy-pluralize: 1.0.2_mongoose@5.10.8
+      mongoose-legacy-pluralize: 1.0.2_mongoose@5.10.9
       mpath: 0.7.0
       mquery: 3.2.2
       ms: 2.1.2
@@ -1814,7 +1814,7 @@ packages:
     peerDependencies:
       mongoose: '*'
     resolution:
-      integrity: sha512-hbpFhOU6rWkWPkekUeSJxqWwzsjVQZ9xPg4WmWA1HJ8YDvjyNye1xbp82fw67BpnyvcjHxyU3/YhujsOCx55yw==
+      integrity: sha512-7dkr1d6Uyk87hELzoc6B7Zo7kkPTx8rKummk51Y0je2V2Ttsw0KFPwTp1G8JIbBta7Wpw8j15PJi0d33Ode2nw==
   /mpath/0.7.0:
     dev: false
     engines:
@@ -2733,6 +2733,6 @@ specifiers:
   graphql: ^15.3.0
   jsonwebtoken: ^8.5.1
   md5: ^2.3.0
-  mongoose: ^5.10.8
+  mongoose: ^5.10.9
   nodemon: ^2.0.4
   regenerator-runtime: ^0.13.7

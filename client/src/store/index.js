@@ -6,6 +6,7 @@ import { apolloClient } from '../main'
 
 import {
   ADD_TASK,
+  ASSIGN_TASK,
   GET_ALL_TASKS,
   GET_REQUEST_TASKS,
   GET_ASSIGN_TASKS,
@@ -33,9 +34,9 @@ export default new Vuex.Store({
     defaultTheme: {}
   },
   mutations: {
-    clearError: state => (state.error = null),
+    clearError: (state) => (state.error = null),
 
-    clearUser: state => (state.user = null),
+    clearUser: (state) => (state.user = null),
 
     newTask: (state, payload) => {
       state.tasks.push(payload)
@@ -77,16 +78,16 @@ export default new Vuex.Store({
       state.buckets = result
     },
 
-    resetTheme: state => {
+    resetTheme: (state) => {
       state.theme = state.defaultTheme
-      Object.keys(state.theme).forEach(element => {
+      Object.keys(state.theme).forEach((element) => {
         colors.setBrand(element, state.theme[element])
       })
     },
 
     setTheme: (state, payload) => {
       state.theme = payload
-      Object.keys(state.theme).forEach(element => {
+      Object.keys(state.theme).forEach((element) => {
         colors.setBrand(element, state.theme[element])
       })
     },
@@ -114,7 +115,7 @@ export default new Vuex.Store({
           commit('setLoading', false)
           commit('addTask', data.addTask)
         })
-        .catch(err => {
+        .catch((err) => {
           commit('setLoading', false)
           console.error(err)
         })
@@ -131,7 +132,7 @@ export default new Vuex.Store({
           commit('setTasks', data.getAllTasks)
           commit('setLoading', false)
         })
-        .catch(err => {
+        .catch((err) => {
           commit('setLoading', false)
           console.error(err)
         })
@@ -151,7 +152,7 @@ export default new Vuex.Store({
           commit('setTasks', data.getRequestTasks)
           commit('setLoading', false)
         })
-        .catch(err => {
+        .catch((err) => {
           commit('setLoading', false)
           console.error(err)
         })
@@ -171,7 +172,7 @@ export default new Vuex.Store({
           commit('setTasks', data.getAssignTasks)
           commit('setLoading', false)
         })
-        .catch(err => {
+        .catch((err) => {
           commit('setLoading', false)
           console.error(err)
         })
@@ -195,7 +196,7 @@ export default new Vuex.Store({
             localStorage.setItem('fullname', data.getCurrentUser.fullname)
           }
         })
-        .catch(err => {
+        .catch((err) => {
           commit('setLoading', false)
           console.error(err)
         })
@@ -209,7 +210,7 @@ export default new Vuex.Store({
         .then(({ data }) => {
           commit('setAssignees', data.getAssignees)
         })
-        .catch(err => {
+        .catch((err) => {
           console.error(err)
         })
     },
@@ -223,7 +224,7 @@ export default new Vuex.Store({
           variables: payload
         })
         .then(({ data }) => {})
-        .catch(err => {
+        .catch((err) => {
           console.error(err)
         })
     },
@@ -235,7 +236,7 @@ export default new Vuex.Store({
           variables: payload
         })
         .then(({ data }) => {})
-        .catch(err => {
+        .catch((err) => {
           console.error(err)
         })
     },
@@ -253,7 +254,7 @@ export default new Vuex.Store({
         .then(({ data }) => {
           commit('setLoading', false)
         })
-        .catch(err => {
+        .catch((err) => {
           commit('setLoading', false)
           commit('setError', err)
           console.error(err)
@@ -276,7 +277,7 @@ export default new Vuex.Store({
 
           router.go()
         })
-        .catch(err => {
+        .catch((err) => {
           commit('setLoading', false)
           commit('setError', err)
           console.error(err)
@@ -299,7 +300,7 @@ export default new Vuex.Store({
 
           router.go()
         })
-        .catch(err => {
+        .catch((err) => {
           commit('setLoading', false)
           commit('setError', err)
           console.error(err)
@@ -327,16 +328,16 @@ export default new Vuex.Store({
     }
   },
   getters: {
-    assignees: state => state.assignees,
-    authError: state => state.authError,
-    error: state => state.error,
-    loading: state => state.loading,
-    searchResults: state => state.searchResults,
-    tasks: state => state.tasks,
-    buckets: state => state.buckets,
-    user: state => state.user,
-    theme: state => state.theme,
-    defaultTheme: state => state.defaultTheme
+    assignees: (state) => state.assignees,
+    authError: (state) => state.authError,
+    error: (state) => state.error,
+    loading: (state) => state.loading,
+    searchResults: (state) => state.searchResults,
+    tasks: (state) => state.tasks,
+    buckets: (state) => state.buckets,
+    user: (state) => state.user,
+    theme: (state) => state.theme,
+    defaultTheme: (state) => state.defaultTheme
   },
   modules: {}
 })

@@ -53,7 +53,7 @@ export default {
       description: '',
       priority: '',
       dueDate: new Date().toISOString().substr(0, 10),
-      titleRules: [(title) => !!title || 'Title is required', (title) => title.length < 20 || 'Title must have less than 20 characters'],
+      titleRules: [(title) => !!title || 'Title is required', (title) => title.length < 30 || 'Title must have less than 30 characters'],
       descRules: [(desc) => !!desc || 'Description is required', (desc) => desc.length < 200 || 'Description must have less than 200 characters'],
       priorityRules: [(priority) => !!priority || 'Priority is required'],
       priorities: ['top', 'medium', 'low']

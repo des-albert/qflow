@@ -44,8 +44,8 @@
                     <q-select filled style="width: 400px" :options="assignees" label="Select Assignee" v-model="assignee" />
                   </q-card-section>
                   <q-card-actions>
-                    <q-btn class="bg-button" flat label="close" @click.native="dialogOpen = false" />
-                    <q-btn class="bg-button" flat label="save" @click.native="handleAssignTask" />
+                    <q-btn class="bg-button" flat label="Close" @click.native="dialogOpen = false" />
+                    <q-btn class="bg-button" flat label="Save" @click.native="handleAssignTask" />
                   </q-card-actions>
                 </q-card>
               </q-dialog>
@@ -154,7 +154,21 @@ export default {
       commentRules: [
         (comment) => !!comment || 'Comment is required',
         (comment) => (comment && comment.length < 80) || 'Comment must be less than 80 characters'
-      ]
+      ],
+      thumbStyle: {
+        right: '4px',
+        borderRadius: '5px',
+        backgroundColor: 'bg-button',
+        width: '5px',
+        opacity: 0.75
+      },
+      barStyle: {
+        right: '2px',
+        borderRadius: '9px',
+        backgroundColor: 'bg-button',
+        width: '9px',
+        opacity: 0.2
+      }
     }
   },
 
@@ -195,13 +209,6 @@ export default {
         taskId: this.taskId,
         fullname: this.assignee
       })
-
-      if (this.user.role === 'Manager') {
-        this.$store.dispatch('changeStatus', {
-          taskId: this.taskId,
-          status: 'assigned'
-        })
-      }
 
       this.$router.push('/tasks')
     },
